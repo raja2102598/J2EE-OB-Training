@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+</head>
+<body
+	style="display: flex; justify-content: center; align-items: center;">
+	<style>
+td {
+	height: 50px;
+}
+</style>
+	<form action="/ServletsAssignment/UserReg" method="post" name="userRegForm">
+		<h2 style="text-align: center;">User data</h2>
+		<table>
+			<thead></thead>
+			<tbody>
+				<tr>
+					<td><label>First Name</label></td>
+					<td><input type="text" name="firstName"></td>
+
+				</tr>
+				<tr>
+					<td><label>Last Name</label></td>
+					<td><input type="text" name="lastName"></td>
+				</tr>
+
+
+				<tr>
+					<td><label>Address</label></td>
+					<td><input type="text" height="10px" name="address"></td>
+				</tr>
+
+
+				<tr>
+					<td><label>Contact Number</label></td>
+					<td><input type="number" name="number"></td>
+
+				</tr>
+
+				<tr>
+					<td><label>Gender</label></td>
+					<td><input type="radio" name="gender" value="male"> <label>Male</label>
+						<input type="radio" name="gender" value="female"> <label>Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Favorite Programming Language</label></td>
+					<td><input type="checkbox" name="language" value="Java" /> <label>Java</label></td>
+				</tr>
+				<tr>
+					</td>
+					<td>
+					<td><input type="checkbox" name="language" value="Python" />
+						<label>Python</label></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="language" value="Dart">
+						<label>Dart</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="language" value="JavaScript">
+						<label>JavaScript</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="language" value="Perl">
+						<label>Perl</label></td>
+				</tr>
+				<tr>
+					
+				</tr>
+				<tr>
+					<td style="text-align: center;"><input type="submit"
+						value="Submit"></td>
+					<td style="text-align: center;"><input type="button"
+						value="Cancel"></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+
+</html>
