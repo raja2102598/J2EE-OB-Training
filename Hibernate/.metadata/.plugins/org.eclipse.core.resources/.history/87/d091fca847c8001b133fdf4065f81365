@@ -1,0 +1,7 @@
+package com.onebill.hibernate.JPAProject;
+
+public class SaveRecord {
+	public static void main(String[] args) {
+
+	}
+}

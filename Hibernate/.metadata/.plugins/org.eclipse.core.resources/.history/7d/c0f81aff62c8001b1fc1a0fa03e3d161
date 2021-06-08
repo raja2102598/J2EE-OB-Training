@@ -1,0 +1,15 @@
+package com.onebill.hibernate.Assignments;
+
+import com.onebill.hibernate.Assignments.bean.Employee;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Employee e=new Employee();
+    }
+}

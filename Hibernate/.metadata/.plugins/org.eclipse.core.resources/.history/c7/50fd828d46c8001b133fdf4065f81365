@@ -1,0 +1,8 @@
+package com.onebill.hibernate.JPAProject.bean;
+
+public class Movie {
+private int mid;
+private String mname;
+private double mrating;
+private String mreview;
+}

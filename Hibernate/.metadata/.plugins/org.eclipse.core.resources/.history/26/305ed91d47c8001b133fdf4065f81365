@@ -1,0 +1,38 @@
+package com.onebill.hibernate.JPAProject.bean;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Movie {
+	@Id
+	private int mid;
+	private String mname;
+	private double mrating;
+	private String mreview;
+	public int getMid() {
+		return mid;
+	}
+	public void setMid(int mid) {
+		this.mid = mid;
+	}
+	public String getMname() {
+		return mname;
+	}
+	public void setMname(String mname) {
+		this.mname = mname;
+	}
+	public double getMrating() {
+		return mrating;
+	}
+	public void setMrating(double mrating) {
+		this.mrating = mrating;
+	}
+	public String getMreview() {
+		return mreview;
+	}
+	public void setMreview(String mreview) {
+		this.mreview = mreview;
+	}
+	
+}

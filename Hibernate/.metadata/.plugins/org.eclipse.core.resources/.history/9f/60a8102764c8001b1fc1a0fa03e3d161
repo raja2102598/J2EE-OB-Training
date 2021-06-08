@@ -1,0 +1,10 @@
+package com.onebill.hibernate.Assignments;
+
+public class AppJPA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

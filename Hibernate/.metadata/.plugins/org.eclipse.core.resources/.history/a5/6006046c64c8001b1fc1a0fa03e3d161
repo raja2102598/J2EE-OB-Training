@@ -1,0 +1,14 @@
+package com.onebill.hibernate.Assignments;
+
+import com.onebill.hibernate.Assignments.bean.Employee;
+
+public class AppJPA {
+
+	public static void main(String[] args) {
+		 Employee e=new Employee();
+	        e.setId(2);
+	        e.setName("cde");
+	        e.setSalary(10000);
+	}
+
+}

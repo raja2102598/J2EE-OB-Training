@@ -1,0 +1,5 @@
+package com.onebill.hibernate.JPAProject.bean;
+
+public class Movie {
+
+}
