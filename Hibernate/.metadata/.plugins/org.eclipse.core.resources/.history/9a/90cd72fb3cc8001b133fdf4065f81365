@@ -1,8 +1,0 @@
-package com.onebill.hibernate.bean;
-
-public class User {
-
-	private int userid;
-	private String username;
-	private String password;
-}
