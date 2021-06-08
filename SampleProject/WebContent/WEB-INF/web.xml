@@ -17,4 +17,12 @@
 		<servlet-name>Hello</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>myjsp</servlet-name>
+		<jsp-file>/Demo.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myjsp</servlet-name>
+<url-pattern>/JspDateTime</url-pattern>	
+	</servlet-mapping>
 </web-app>
