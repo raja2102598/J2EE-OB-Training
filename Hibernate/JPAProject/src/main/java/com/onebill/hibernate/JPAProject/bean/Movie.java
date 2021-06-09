@@ -1,10 +1,12 @@
 package com.onebill.hibernate.JPAProject.bean;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Movie {
+public class Movie implements Serializable{
 	@Id
 	private int mid;
 	private String mname;

@@ -16,9 +16,9 @@ public class App
     public static void main( String[] args )
     {
     	Movie o=new Movie();
-		o.setMid(1);
-		o.setMname("Avengers");
-		o.setMrating(8.5);
+		o.setMid(3);
+		o.setMname("Loki");
+		o.setMrating(7.5);
 		o.setMreview("Good Movie");
 		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("Movie");
 //		specifying the persistence unit
