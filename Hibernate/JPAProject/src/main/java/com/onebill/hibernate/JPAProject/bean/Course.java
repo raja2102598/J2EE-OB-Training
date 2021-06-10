@@ -6,26 +6,22 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
+
 @Data
 @Entity
-@Table(name = "cart")
-public class Cart {
+@Table(name = "courseinfo")
+public class Course {
+
 	@Id
 	@Column
 	private int cid;
 	@Column
 	private String cname;
-
-//	@OneToOne(cascade = CascadeType.ALL, mappedBy = "cart")
-//	private Item item;
-
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "cart")
-	private List<Item> items;
-	
+	@ManyToMany(cascade = CascadeType.ALL,mappedBy = "courses")
+	private List<Student> students;
 }

@@ -1,7 +1,13 @@
 package com.onebill.hibernate.JPAProject.bean;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -10,11 +16,33 @@ import javax.persistence.Table;
 @Table(name="item")
 public class Item {
 	@Id
+	@Column
 	private int id;
+	@Column
 	private String itemname;
 	
-	@OneToOne
+//	@OneToOne(cascade = CascadeType.ALL)
+//	@JoinColumn(name="cid")
+//	private Cart cart;
+	
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="cid")
 	private Cart cart;
+	
+	
+//	private Cart cart;
+
+
+	
+	
+	
+//	public List<Cart> getCart() {
+//		return cart;
+//	}
+//	public void setCart(List<Cart> cart) {
+//		this.cart = cart;
+//	}
 	public int getId() {
 		return id;
 	}
