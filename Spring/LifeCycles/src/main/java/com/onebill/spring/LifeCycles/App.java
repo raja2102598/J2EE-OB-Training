@@ -16,8 +16,10 @@ public class App
     {
        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("AllConf.xml");
        Company bean = (Company) applicationContext.getBean("company");
+       System.out.println("Changing name using postProcessBeanFactory \nName : "+bean.getName());
        bean.setName("Hello");
-       System.out.println(bean.getName());
+       System.out.println("Changing name in Main Class \nName : "+bean.getName());
+       
        ((AbstractApplicationContext)applicationContext).close();
     }
 }

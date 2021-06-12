@@ -17,9 +17,22 @@ public class Company implements BeanFactoryPostProcessor,BeanPostProcessor{
 	public Company() {
 
 	}
+	
+//	After loading xml definitions before instantiation and dependency injection
+	@Override
+	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
+		System.out.println("postProcessBeanFactory \nDefintion Count : " +beanFactory.getBeanDefinitionCount());
+		System.out.println("Definition Names ");
+		for(String name: beanFactory.getBeanDefinitionNames())
+			System.out.println(name);
+		Company bean = beanFactory.getBean(Company.class, "company");
+		System.out.println("Name in Xml File :"+ bean.getName());
+//		updating name
+		bean.setName("Google");
+	}
+//	after instantiation and dependency injection
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-		// TODO Auto-generated method stub
 		System.out.println("postProcessBeforeInitialization " +beanName);
 		return BeanPostProcessor.super.postProcessBeforeInitialization(bean, beanName);
 	}
@@ -27,10 +40,5 @@ public class Company implements BeanFactoryPostProcessor,BeanPostProcessor{
 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
 		System.out.println("postProcessAfterInitialization " +beanName);
 		return BeanPostProcessor.super.postProcessAfterInitialization(bean, beanName);
-	}
-	@Override
-	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-		// TODO Auto-generated method stub
-		System.out.println("postProcessBeanFactory " +beanFactory.getBeanDefinitionCount());
 	}
 }
