@@ -1,0 +1,32 @@
+{
+	"empId": 10,
+	"name": "SAI",
+	"emailId": "sai@te.com",
+	"deptId": 0,
+	"salary": 250000.0,
+	"password": "qwerty",
+	"userotherinfo": {
+		"age": 23,
+		"married": false
+	},
+	"address": [
+		{
+			"houseNumber": 100,
+			"street": "MG Road",
+			"city": "BLR",
+			"typeOfAddress": "T"
+		},
+		{
+			"houseNumber": 300,
+			"street": "Shivaji Nagar",
+			"city": "Mumbai",
+			"typeOfAddress": "G"
+		},
+		{
+			"houseNumber": 200,
+			"street": "Shivaji Nagar",
+			"city": "Pune",
+			"typeOfAddress": "P"
+		}
+	]
+}

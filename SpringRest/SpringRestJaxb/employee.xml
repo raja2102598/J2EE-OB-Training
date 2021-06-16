@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employee-info>
+    <emp-id>20</emp-id>
+    <name>Raja</name>
+    <mobile-number>88888</mobile-number>
+    <email-id>Rr@g.com</email-id>
+    <dob>2021-06-15T12:10:08.071+05:30</dob>
+    <doj>2021-06-15T12:10:08.071+05:30</doj>
+    <dept-id>1</dept-id>
+    <salary>2699.0</salary>
+</employee-info>

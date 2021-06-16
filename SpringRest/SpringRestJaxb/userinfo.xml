@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user-info>
+    <emp-id>2</emp-id>
+    <name>Raja</name>
+    <email-id>r@g.com</email-id>
+    <dept-id>1</dept-id>
+    <salary>100000.0</salary>
+    <other-info>
+        <age>20</age>
+        <is-married>false</is-married>
+    </other-info>
+    <user-addresses>
+        <addr>
+            <house-number>1</house-number>
+            <street>a</street>
+            <city>chennai</city>
+            <address-type>T</address-type>
+        </addr>
+        <addr>
+            <house-number>1</house-number>
+            <street>a</street>
+            <city>chennai</city>
+            <address-type>T</address-type>
+        </addr>
+    </user-addresses>
+</user-info>
